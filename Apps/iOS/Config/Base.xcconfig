@@ -1,0 +1,15 @@
+// Shared build settings. Personal values (Team ID, bundle prefix, signing style)
+// go in Config/Local.xcconfig, which is git-ignored. Copy Local.xcconfig.example to start.
+
+BUNDLE_ID_PREFIX = com.example
+DEVELOPMENT_TEAM =
+CODE_SIGN_STYLE = Automatic
+CODE_SIGN_IDENTITY[config=Debug] = Apple Development
+
+IOS_CODE_SIGN_STYLE = Automatic
+// Manual App Store signing (optional): profile names per iOS/watchOS target.
+KC_PROFILE_IOS_APP =
+KC_PROFILE_IOS_WIDGET =
+KC_PROFILE_WATCH_APP =
+KC_PROFILE_WATCH_WIDGET =
+#include? "Local.xcconfig"

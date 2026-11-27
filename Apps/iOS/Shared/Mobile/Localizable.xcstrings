@@ -1,0 +1,1684 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%@ W" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ W"
+          }
+        }
+      }
+    },
+    "%@ W across %lld ports" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$lld 个端口共输出 %1$@ W"
+          }
+        }
+      }
+    },
+    "%@ W free" : {
+
+    },
+    "%@ will stop charging." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 将停止充电。"
+          }
+        }
+      }
+    },
+    "%@ · %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ · %2$@"
+          }
+        }
+      }
+    },
+    "%@W" : {
+
+    },
+    "%lld" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "%lld W" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld W"
+          }
+        }
+      }
+    },
+    "%lld W · %lld charging" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld W · %lld 个正在充电"
+          }
+        }
+      }
+    },
+    "%lld W · %lld charging · %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld W · %lld 个端口充电中 · %@前"
+          }
+        }
+      }
+    },
+    "%lld charging" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 个正在充电"
+          }
+        }
+      }
+    },
+    "%lld charging · %@ %lld W" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 个正在充电 · %@ %lld W"
+          }
+        }
+      }
+    },
+    "%lld charging · %@ W free" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld charging · %2$@ W free"
+          }
+        }
+      }
+    },
+    "%lld charging · Today %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld charging · Today %2$@"
+          }
+        }
+      }
+    },
+    "%lld ports active" : {
+
+    },
+    "%lld samples" : {
+
+    },
+    "%lld%%" : {
+
+    },
+    "%lld%% · %lldW" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld%% · %2$lldW"
+          }
+        }
+      }
+    },
+    "%lldW" : {
+
+    },
+    "%lldd" : {
+
+    },
+    "%lldd streak" : {
+
+    },
+    "1×1" : {
+
+    },
+    "1×1 Square" : {
+
+    },
+    "2×1" : {
+
+    },
+    "2×1 Full Width" : {
+
+    },
+    "7 Days" : {
+
+    },
+    "7d %@" : {
+
+    },
+    "7d · %@" : {
+
+    },
+    "AWAKE" : {
+
+    },
+    "About" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于"
+          }
+        }
+      }
+    },
+    "Add" : {
+
+    },
+    "Add Widget" : {
+
+    },
+    "Add the Kang Charge widget to your Home Screen or Lock Screen to see power at a glance." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将 Kang Charge 小组件添加到主屏幕或锁定屏幕，随时查看充电功率。"
+          }
+        }
+      }
+    },
+    "Add, resize (1×1 or 2×1), and drag widgets to compose your ideal SugarWatt screen — or long-press directly on any widget on the Home canvas to drag & rearrange." : {
+
+    },
+    "All 5 Ports" : {
+
+    },
+    "Apply" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用"
+          }
+        }
+      }
+    },
+    "Auto-lock enabled" : {
+
+    },
+    "Automatically merges daily charging energy across your Mac and iPhone using your private iCloud Key-Value Store." : {
+
+    },
+    "C1" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C1"
+          }
+        }
+      }
+    },
+    "C1 Only" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅 C1"
+          }
+        }
+      }
+    },
+    "C2" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C2"
+          }
+        }
+      }
+    },
+    "C3" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C3"
+          }
+        }
+      }
+    },
+    "C4" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C4"
+          }
+        }
+      }
+    },
+    "C4 behaves like a USB-A port for fans and lamps. Ports reconnect when you switch." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C4 模拟 USB-A 端口，为风扇、台灯等供电。切换时端口会断电重连。"
+          }
+        }
+      }
+    },
+    "Cached" : {
+
+    },
+    "Calendar Heatmap" : {
+
+    },
+    "Cancel" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        }
+      }
+    },
+    "Change charging mode?" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更改充电模式？"
+          }
+        }
+      }
+    },
+    "Charger Memory Log" : {
+
+    },
+    "Charger Offline" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电器离线"
+          }
+        }
+      }
+    },
+    "Charger Power" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电器功率"
+          }
+        }
+      }
+    },
+    "Charging" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电"
+          }
+        }
+      }
+    },
+    "Charging Controls" : {
+
+    },
+    "Charging Mode" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电模式"
+          }
+        }
+      }
+    },
+    "Charging Rhythm" : {
+
+    },
+    "Charging will stop for the connected device." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已连接设备将停止充电。"
+          }
+        }
+      }
+    },
+    "Charts ›" : {
+
+    },
+    "Clear Energy History" : {
+
+    },
+    "Clear History" : {
+
+    },
+    "Clear daily energy history?" : {
+
+    },
+    "Clipboard is empty." : {
+
+    },
+    "Connect" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "连接"
+          }
+        }
+      }
+    },
+    "Connecting to charger…" : {
+
+    },
+    "Connection" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "连接"
+          }
+        }
+      }
+    },
+    "Control Port" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "控制端口"
+          }
+        }
+      }
+    },
+    "Cool" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "凉爽"
+          }
+        }
+      }
+    },
+    "Cool First" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "温度优先"
+          }
+        }
+      }
+    },
+    "Couldn't connect to the charger. Check the address and try again." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法连接充电器，请检查地址后重试。"
+          }
+        }
+      }
+    },
+    "Couldn't find an MCP server URL ending in /sse in the clipboard." : {
+
+    },
+    "Couldn't read the charger's response." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法读取充电器的响应。"
+          }
+        }
+      }
+    },
+    "Couldn't update port" : {
+
+    },
+    "Couldn't update the port." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法更新端口。"
+          }
+        }
+      }
+    },
+    "Couldn't update the port. Try again." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法更新端口，请重试。"
+          }
+        }
+      }
+    },
+    "Current" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电流"
+          }
+        }
+      }
+    },
+    "Cut Power" : {
+
+    },
+    "Cut power %@" : {
+
+    },
+    "Cut power to %@?" : {
+
+    },
+    "Daily Energy" : {
+
+    },
+    "Desk Charger" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "桌面充电器"
+          }
+        }
+      }
+    },
+    "Device" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设备"
+          }
+        }
+      }
+    },
+    "Device nickname" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设备昵称"
+          }
+        }
+      }
+    },
+    "Disconnect" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "断开连接"
+          }
+        }
+      }
+    },
+    "Disconnect this charger?" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "断开此充电器的连接？"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成"
+          }
+        }
+      }
+    },
+    "Edit Widgets" : {
+
+    },
+    "Enable %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用 %@"
+          }
+        }
+      }
+    },
+    "Energy Equivalents" : {
+
+    },
+    "Energy Insights & Charts" : {
+
+    },
+    "Energy by Port" : {
+
+    },
+    "Extracted MCP server URL automatically." : {
+
+    },
+    "Extracted MCP server URL from copied text." : {
+
+    },
+    "Fetches the latest readings from your charger." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "获取充电器的最新读数。"
+          }
+        }
+      }
+    },
+    "Gentle output on every port. Cool and quiet for the night." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "各端口温和输出，夜间充电凉爽安静。"
+          }
+        }
+      }
+    },
+    "Get Charger Power" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "获取充电功率"
+          }
+        }
+      }
+    },
+    "GitHub-style daily charging energy heatmap." : {
+
+    },
+    "Hardware-metered charging calendar" : {
+
+    },
+    "Hot" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "偏热"
+          }
+        }
+      }
+    },
+    "Idle" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "空闲"
+          }
+        }
+      }
+    },
+    "Idle · Up to %lld W" : {
+
+    },
+    "In the CANDYSIGN app, open your charger's MCP settings and copy the server URL. It looks like https://mcp.thecandysign.com/…/sse." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 CANDYSIGN App 中打开充电器的 MCP 设置，复制服务器地址。地址类似于 https://mcp.thecandysign.com/…/sse。"
+          }
+        }
+      }
+    },
+    "In the CANDYSIGN app, open your charger's MCP settings and tap Copy. Then tap Paste above — SugarWatt extracts the /sse URL for you." : {
+
+    },
+    "Kang Charge" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kang Charge"
+          }
+        }
+      }
+    },
+    "Kang Charge is an independent app and is not affiliated with CANDYSIGN." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kang Charge 是独立应用，与 CANDYSIGN 无关联。"
+          }
+        }
+      }
+    },
+    "Landscape Desk Dashboard" : {
+
+    },
+    "Last 7 Days" : {
+
+    },
+    "Live" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "实时"
+          }
+        }
+      }
+    },
+    "Live Power & Curve" : {
+
+    },
+    "Live power and ports of your charger." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电器的实时功率和端口状态。"
+          }
+        }
+      }
+    },
+    "Live power, trend, and interactive port switches." : {
+
+    },
+    "Loading charger…" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在读取充电器…"
+          }
+        }
+      }
+    },
+    "Long-press any widget to drag & rearrange, tap + to add 1×1 or 2×1 widgets, or rotate sideways for StandBy Desk Dashboard." : {
+
+    },
+    "Lost the connection to the charger." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "与充电器的连接已断开。"
+          }
+        }
+      }
+    },
+    "MCP server URL" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MCP 服务器地址"
+          }
+        }
+      }
+    },
+    "MIT License" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MIT 许可证"
+          }
+        }
+      }
+    },
+    "MIT License · Free on App Store" : {
+
+    },
+    "Max Power" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最大功率"
+          }
+        }
+      }
+    },
+    "Maximum efficiency for a quick top-up." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "以最高效率快速补充电量。"
+          }
+        }
+      }
+    },
+    "Minimalist power monitor and control center for your CANDYSIGN CoCan charger." : {
+
+    },
+    "Mode" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "模式"
+          }
+        }
+      }
+    },
+    "Model" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "型号"
+          }
+        }
+      }
+    },
+    "Monitor and control your CANDYSIGN charger." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "监测和控制你的 CANDYSIGN 充电器。"
+          }
+        }
+      }
+    },
+    "Nickname (optional)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "昵称（可选）"
+          }
+        }
+      }
+    },
+    "No memory samples recorded on this port yet." : {
+
+    },
+    "Not set" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未设置"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好"
+          }
+        }
+      }
+    },
+    "Off" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭"
+          }
+        }
+      }
+    },
+    "Offline" : {
+
+    },
+    "Offline · Updated %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "离线 · 更新于 %@前"
+          }
+        }
+      }
+    },
+    "On" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开启"
+          }
+        }
+      }
+    },
+    "Only C1 delivers power, up to 140 W. The other ports turn off." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅 C1 输出，最高 140 W。其他端口将关闭。"
+          }
+        }
+      }
+    },
+    "Open Kang Charge on your iPhone to connect." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请在 iPhone 上打开 Kang Charge 以连接。"
+          }
+        }
+      }
+    },
+    "Open Kang Charge to connect" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开 Kang Charge 进行连接"
+          }
+        }
+      }
+    },
+    "Open Kang Charge to connect your charger." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请打开 Kang Charge 连接充电器。"
+          }
+        }
+      }
+    },
+    "Open SugarWatt on your iPhone to connect." : {
+
+    },
+    "Open SugarWatt to connect" : {
+
+    },
+    "Paste" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "粘贴"
+          }
+        }
+      }
+    },
+    "Paste CANDYSIGN MCP text or /sse URL" : {
+
+    },
+    "Pasted MCP server URL." : {
+
+    },
+    "Peak Day" : {
+
+    },
+    "Performance" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高性能"
+          }
+        }
+      }
+    },
+    "Port" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "端口"
+          }
+        }
+      }
+    },
+    "Port Pressure" : {
+
+    },
+    "Ports" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "端口"
+          }
+        }
+      }
+    },
+    "Power" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "功率"
+          }
+        }
+      }
+    },
+    "Power First" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "功率优先"
+          }
+        }
+      }
+    },
+    "Power Ring" : {
+
+    },
+    "Power and charging ports at a glance." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一眼查看功率和充电端口。"
+          }
+        }
+      }
+    },
+    "Power follows each device. Best for everyday use." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "按每台设备的需求分配功率，适合日常使用。"
+          }
+        }
+      }
+    },
+    "Protocol" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "协议"
+          }
+        }
+      }
+    },
+    "Pure Black OLED Theme" : {
+
+    },
+    "Recent power history" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "近期功率变化"
+          }
+        }
+      }
+    },
+    "Refresh" : {
+
+    },
+    "Refresh Charger" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刷新充电器"
+          }
+        }
+      }
+    },
+    "Refresh Charger Status" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刷新充电器状态"
+          }
+        }
+      }
+    },
+    "Reset to Default Layout" : {
+
+    },
+    "Returns how many watts your charger is delivering right now." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "返回充电器当前输出的功率（瓦）。"
+          }
+        }
+      }
+    },
+    "Rotate your iPhone sideways to turn it into an always-on charging dashboard. Enable StandBy Mode to keep the display awake while docked." : {
+
+    },
+    "Sample" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "示例"
+          }
+        }
+      }
+    },
+    "Sample Data" : {
+
+    },
+    "Sample data" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "示例数据"
+          }
+        }
+      }
+    },
+    "Screen stays awake" : {
+
+    },
+    "Server error: %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "服务器错误：%@"
+          }
+        }
+      }
+    },
+    "Set Charging Mode" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置充电模式"
+          }
+        }
+      }
+    },
+    "Set Mode" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置模式"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
+          }
+        }
+      }
+    },
+    "Sleep" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "睡眠"
+          }
+        }
+      }
+    },
+    "Small Appliance" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小家电"
+          }
+        }
+      }
+    },
+    "Smart" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "智能"
+          }
+        }
+      }
+    },
+    "Source code on GitHub" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub 源代码"
+          }
+        }
+      }
+    },
+    "StandBy Mode (Keep Screen Awake)" : {
+
+    },
+    "Streak" : {
+
+    },
+    "SugarWatt" : {
+
+    },
+    "SugarWatt is an independent app and is not affiliated with CANDYSIGN." : {
+
+    },
+    "SugarWatt is an independent open-source app and is not affiliated with CANDYSIGN." : {
+
+    },
+    "Switch right panel: Ports, Calendar Heatmap, or Custom Widget Grid" : {
+
+    },
+    "Switches your charger to another charging mode." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换充电器的充电模式。"
+          }
+        }
+      }
+    },
+    "Sync daily energy via iCloud" : {
+
+    },
+    "Temperature" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "温度"
+          }
+        }
+      }
+    },
+    "That address doesn't look right." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "地址格式似乎不正确。"
+          }
+        }
+      }
+    },
+    "The address stays on this iPhone, in the Keychain." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "地址保存在这台 iPhone 的钥匙串中。"
+          }
+        }
+      }
+    },
+    "The charger didn't respond in time." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电器未及时响应。"
+          }
+        }
+      }
+    },
+    "The charger reported an error: %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电器报告错误：%@"
+          }
+        }
+      }
+    },
+    "The connected device" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已连接的设备"
+          }
+        }
+      }
+    },
+    "The saved address and charger data will be removed from this iPhone." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存在这台 iPhone 上的地址和充电器数据将被移除。"
+          }
+        }
+      }
+    },
+    "The server returned HTTP %lld." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "服务器返回 HTTP %lld。"
+          }
+        }
+      }
+    },
+    "Thermal" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "温控"
+          }
+        }
+      }
+    },
+    "Time" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时间"
+          }
+        }
+      }
+    },
+    "Today" : {
+
+    },
+    "Today %@" : {
+
+    },
+    "Today's Energy" : {
+
+    },
+    "Toggle OLED dark mode" : {
+
+    },
+    "Total %@" : {
+
+    },
+    "Try Again" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重试"
+          }
+        }
+      }
+    },
+    "Try Sample Data" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "体验示例数据"
+          }
+        }
+      }
+    },
+    "Try with Sample Data" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "体验示例数据"
+          }
+        }
+      }
+    },
+    "Turn ${port} ${isOn}" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将 ${port} 设为 ${isOn}"
+          }
+        }
+      }
+    },
+    "Turn %@ %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将 %@ 设为 %@"
+          }
+        }
+      }
+    },
+    "Turn Charger Port On or Off" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开启或关闭充电端口"
+          }
+        }
+      }
+    },
+    "Turn Off" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭"
+          }
+        }
+      }
+    },
+    "Turn off %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭 %@"
+          }
+        }
+      }
+    },
+    "Turn off %@?" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭 %@？"
+          }
+        }
+      }
+    },
+    "Turn off this charging port?" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭此充电端口？"
+          }
+        }
+      }
+    },
+    "Turns one port of your charger on or off." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开启或关闭充电器的一个端口。"
+          }
+        }
+      }
+    },
+    "USB PD & Cable Telemetry" : {
+
+    },
+    "USB-A" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "USB-A"
+          }
+        }
+      }
+    },
+    "Updated %@ ago" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新于 %@前"
+          }
+        }
+      }
+    },
+    "Version" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "版本"
+          }
+        }
+      }
+    },
+    "Voltage" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电压"
+          }
+        }
+      }
+    },
+    "W" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W"
+          }
+        }
+      }
+    },
+    "Waiting for charger readings." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在等待充电器读数。"
+          }
+        }
+      }
+    },
+    "Waiting for charger…" : {
+
+    },
+    "Wake" : {
+
+    },
+    "Warm" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "温热"
+          }
+        }
+      }
+    },
+    "Watts" : {
+
+    },
+    "Where do I find this?" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在哪里可以找到？"
+          }
+        }
+      }
+    },
+    "Widget Board" : {
+
+    },
+    "Widget Gallery" : {
+
+    },
+    "You can paste the full text copied from the CANDYSIGN app — SugarWatt automatically extracts the /sse server URL. Stored locally in your iPhone Keychain." : {
+
+    },
+    "You're offline." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当前处于离线状态。"
+          }
+        }
+      }
+    },
+    "iCloud" : {
+
+    },
+    "of %@ W" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "总功率 %@ W"
+          }
+        }
+      }
+    },
+    "of %@ W · %lld charging" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "总功率 %@ W · %lld 个端口充电中"
+          }
+        }
+      }
+    },
+    "of %lld W" : {
+
+    },
+    "of %lldW" : {
+
+    },
+    "·" : {
+
+    },
+    "· Sample" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· 示例"
+          }
+        }
+      }
+    },
+    "—" : {
+
+    },
+    "≈ %@" : {
+
+    },
+    "≈ %@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "≈ %1$@ %2$@"
+          }
+        }
+      }
+    },
+    "⚡︎ %@ W" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚡︎ %@ W"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
