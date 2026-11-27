@@ -6,7 +6,7 @@
 
 SugarWatt is an independent, MIT open-source app. It talks directly to your charger over CANDYSIGN's official MCP endpoint — no custom backend, no firmware flashing, and no third-party analytics.
 
-> **Looking for iPhone & Apple Watch?** See [KangCharge-iOS](https://github.com/LeiZiKang/KangCharge-iOS) (free on the App Store, open source) and the shared [KangChargeCore](https://github.com/LeiZiKang/KangChargeCore) Swift Package.
+> **Part of the [SugarWatt Monorepo](../../README.md).** See also [iOS & watchOS App](../iOS/README.md), [Shared SPM (`KangChargeCore`)](../../Packages/KangChargeCore/README.md), and [Architecture](../../ARCHITECTURE.md).
 
 ![Main window](docs/screenshots/dashboard-light.png)
 
@@ -38,8 +38,8 @@ SugarWatt is an independent, MIT open-source app. It talks directly to your char
 ## Build from Source
 
 ```bash
-git clone https://github.com/LeiZiKang/KangCharge.git
-cd KangCharge
+git clone https://github.com/LeiZiKang/SugarWatt.git
+cd SugarWatt/Apps/macOS
 brew install xcodegen
 cp Config/Local.xcconfig.example Config/Local.xcconfig
 ```
