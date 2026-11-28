@@ -8,7 +8,7 @@ SugarWatt is an independent, MIT open-source app. It talks directly to your char
 
 > **Part of the [SugarWatt Monorepo](../../README.md).** See also [iOS & watchOS App](../iOS/README.md), [Shared SPM (`KangChargeCore`)](../../Packages/KangChargeCore/README.md), and [Architecture](../../ARCHITECTURE.md).
 
-![Main window](docs/screenshots/dashboard-light.png)
+![Main window](../../docs/screenshots/macos-live-hero.png)
 
 ## Features
 

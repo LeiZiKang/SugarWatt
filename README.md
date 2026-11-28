@@ -18,16 +18,16 @@
 SugarWatt is an independent, MIT open-source SwiftUI suite that talks **directly** to your CANDYSIGN smart desk charger over its official `ionbridge-mcp` endpoint — no custom relay server, no user accounts, no firmware flashing, and no third-party analytics.
 
 <p align="center">
-  <img src="Apps/macOS/docs/screenshots/dashboard-light.png" alt="SugarWatt for macOS — Light Mode" width="88%" />
+  <img src="docs/screenshots/macos-live-hero.png" alt="SugarWatt for macOS — Live Charging Overview" width="90%" />
 </p>
 
 ## Visual Tour
 
-### macOS · Dark Mode, Menu Bar & Desktop Widgets
+### macOS · Light Mode, Menu Bar & Desktop Widgets
 
-| Dark Mode Dashboard | Menu Bar Presence |
+| Light Mode Dashboard | Menu Bar Presence |
 | :---: | :---: |
-| <img src="Apps/macOS/docs/screenshots/dashboard-dark.png" alt="macOS Dark Mode" width="100%" /> | <img src="Apps/macOS/docs/screenshots/menubar-light.png" alt="macOS Menu Bar" width="100%" /> |
+| <img src="Apps/macOS/docs/screenshots/dashboard-light.png" alt="macOS Light Mode" width="100%" /> | <img src="Apps/macOS/docs/screenshots/menubar-light.png" alt="macOS Menu Bar" width="100%" /> |
 
 | Large Interactive Power Widget | Daily Energy Heatmap Widget |
 | :---: | :---: |
