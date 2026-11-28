@@ -12,6 +12,7 @@ struct HomeView: View {
     @State private var editingBoard = false
     @State private var detail: PortSnapshot?
     @State private var pendingOff: PortSnapshot?
+    @AppStorage("sugarwatt.ios.dismissedHomeTip") private var dismissedHomeTip = false
 
     var body: some View {
         GeometryReader { geo in
@@ -32,6 +33,44 @@ struct HomeView: View {
             ScrollView {
                 if let snapshot = model.snapshot {
                     VStack(alignment: .leading, spacing: 14) {
+                        if !dismissedHomeTip && !editingBoard {
+                            HStack(alignment: .top, spacing: 10) {
+                                Image(systemName: "sparkles")
+                                    .font(.callout.weight(.semibold))
+                                    .foregroundStyle(KCStyle.accent)
+                                    .padding(.top, 1)
+                                VStack(alignment: .leading, spacing: 3) {
+                                    Text("Customize Your Charger Desk")
+                                        .font(.caption.weight(.bold))
+                                    Text("Tap + to browse the Widget Store, tap ••• for Device & Settings, or long-press any widget to jiggle & drag.")
+                                        .font(.caption)
+                                        .foregroundStyle(.secondary)
+                                }
+                                Spacer(minLength: 4)
+                                Button {
+                                    withAnimation(.spring(response: 0.25, dampingFraction: 0.85)) {
+                                        dismissedHomeTip = true
+                                    }
+                                } label: {
+                                    Image(systemName: "xmark")
+                                        .font(.caption2.weight(.bold))
+                                        .foregroundStyle(.tertiary)
+                                        .padding(4)
+                                }
+                                .buttonStyle(.plain)
+                            }
+                            .padding(12)
+                            .background(
+                                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                    .fill(KCStyle.accent.opacity(colorScheme == .dark ? 0.12 : 0.08))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                            .strokeBorder(KCStyle.accent.opacity(0.28), lineWidth: 1)
+                                    )
+                            )
+                            .transition(.move(edge: .top).combined(with: .opacity))
+                        }
+
                         WidgetBoardCanvas(
                             layout: layout,
                             isEditing: $editingBoard,
@@ -41,10 +80,12 @@ struct HomeView: View {
                             onRequestTurnOff: { pendingOff = $0 }
                         )
 
-                        Text("Long-press any widget to drag & rearrange, tap + to add 1×1 or 2×1 widgets, or rotate sideways for StandBy Desk Dashboard.")
-                            .font(.footnote)
-                            .foregroundStyle(.secondary)
-                            .padding(.horizontal, 4)
+                        if !editingBoard {
+                            Text("Long-press any widget to jiggle & rearrange, or rotate sideways for StandBy Desk Dashboard.")
+                                .font(.footnote)
+                                .foregroundStyle(.secondary)
+                                .padding(.horizontal, 4)
+                        }
                     }
                     .padding(16)
                 } else {
@@ -67,34 +108,79 @@ struct HomeView: View {
             .background(KCStyle.canvasBackground(for: colorScheme).ignoresSafeArea())
             .navigationTitle(model.snapshot?.deviceName ?? AppConfig.deviceName)
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    if editingBoard {
+                if editingBoard {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button {
+                            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                            customizing = true
+                        } label: {
+                            Label("Widget Store", systemImage: "plus")
+                                .fontWeight(.semibold)
+                        }
+                    }
+                    ToolbarItem(placement: .topBarTrailing) {
                         Button("Done") {
-                            withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
+                            withAnimation(.spring(response: 0.3, dampingFraction: 0.82)) {
                                 editingBoard = false
                             }
                         }
                         .fontWeight(.semibold)
-                    } else {
-                        Button("Edit Widgets", systemImage: "square.grid.2x2") {
-                            withAnimation(.spring(response: 0.3, dampingFraction: 0.8)) {
-                                editingBoard = true
-                            }
-                        }
                     }
-                }
-                ToolbarItem(placement: .topBarTrailing) {
-                    if editingBoard {
-                        Button("Add", systemImage: "plus") { customizing = true }
-                    } else {
-                        Button("Settings", systemImage: "gearshape") { settings = true }
+                } else {
+                    ToolbarItemGroup(placement: .topBarTrailing) {
+                        Button {
+                            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                            customizing = true
+                        } label: {
+                            Image(systemName: "plus")
+                                .font(.system(size: 13.5, weight: .bold))
+                                .foregroundStyle(KCStyle.accent)
+                                .frame(width: 32, height: 32)
+                                .background(.ultraThinMaterial, in: Circle())
+                                .overlay(Circle().strokeBorder(KCStyle.accent.opacity(0.32), lineWidth: 1))
+                        }
+                        .accessibilityLabel("Open Widget Store")
+
+                        Menu {
+                            Section("Widgets") {
+                                Button {
+                                    customizing = true
+                                } label: {
+                                    Label("Widget Store", systemImage: "plus.square.on.square")
+                                }
+                                Button {
+                                    UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                                    withAnimation(.spring(response: 0.3, dampingFraction: 0.82)) {
+                                        editingBoard = true
+                                    }
+                                } label: {
+                                    Label("Rearrange & Resize", systemImage: "square.grid.2x2")
+                                }
+                            }
+                            Section("Charger") {
+                                Button {
+                                    settings = true
+                                } label: {
+                                    Label("Device & Settings", systemImage: "gearshape")
+                                }
+                            }
+                        } label: {
+                            Image(systemName: "ellipsis")
+                                .font(.system(size: 13.5, weight: .bold))
+                                .foregroundStyle(.primary)
+                                .frame(width: 32, height: 32)
+                                .background(.ultraThinMaterial, in: Circle())
+                                .overlay(Circle().strokeBorder(Color.primary.opacity(0.12), lineWidth: 1))
+                        }
+                        .accessibilityLabel("More Options & Settings")
                     }
                 }
             }
             .refreshable { await model.refresh() }
             .sheet(isPresented: $customizing) {
-                CustomizeHomeView(layout: layout)
+                WidgetStoreSheetPrototype(layout: layout, snapshot: model.snapshot ?? KCDemo.snapshot())
                     .presentationDetents([.medium, .large])
+                    .presentationDragIndicator(.visible)
             }
             .sheet(isPresented: $settings) {
                 SettingsView()
@@ -376,7 +462,7 @@ struct HomeView: View {
                     Spacer(minLength: 4)
 
                     VStack(alignment: .trailing, spacing: 4) {
-                        Text(port.isCharging ? "\(KCFormat.watts(port.power)) W" : "—")
+                        Text(port.isCharging ? "\(KCFormat.watts(port.power)) W" : (port.enabled ? "Idle" : "Off"))
                             .font(.subheadline.weight(.semibold))
                             .monospacedDigit()
                             .foregroundStyle(port.isCharging ? .primary : .tertiary)
@@ -388,30 +474,15 @@ struct HomeView: View {
                             segmentHeight: 6
                         )
                     }
+
+                    Image(systemName: "chevron.right")
+                        .font(.caption2.weight(.semibold))
+                        .foregroundStyle(.quaternary)
+                        .padding(.leading, 2)
                 }
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
-
-            if port.isCharging {
-                Toggle("Cut power \(port.name)", isOn: Binding(
-                    get: { true },
-                    set: { on in if !on { pendingOff = port } }
-                ))
-                .labelsHidden()
-                .tint(KCStyle.charging)
-                .fixedSize()
-                .disabled(model.busyPorts.contains(port.index))
-            } else {
-                Button("Idle") {
-                    Task { await model.setPort(port.index, on: true) }
-                }
-                .font(.caption.weight(.medium))
-                .foregroundStyle(.tertiary)
-                .buttonStyle(.plain)
-                .frame(width: 44, alignment: .trailing)
-                .disabled(model.busyPorts.contains(port.index))
-            }
         }
         .padding(.vertical, 4)
     }

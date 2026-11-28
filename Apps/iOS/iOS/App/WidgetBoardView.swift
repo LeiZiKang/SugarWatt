@@ -5,33 +5,30 @@ import UniformTypeIdentifiers
 import KangChargeCore
 import KangChargeUI
 
-/// Subtle iOS SpringBoard-style staggered jiggle animation shown in widget Edit Mode.
+/// Authentic iOS SpringBoard-style organic jiggle (staggered rotation + subtle XY micro-bounce).
+/// Powered by TimelineView so it animates smoothly in both Xcode Live Previews and real devices.
 private struct SpringBoardJiggle: ViewModifier {
     let active: Bool
+    let isCompact: Bool
     let seed: Int
-    @State private var rocking = false
 
     func body(content: Content) -> some View {
-        let isPreview = ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1"
-        let shouldRock = active && !isPreview
-        let angle: Double = (seed % 2 == 0) ? 1.15 : -1.15
-        let duration: Double = 0.13 + Double(seed % 4) * 0.014
-        let delay: Double = Double(seed % 5) * 0.025
+        let freq = 22.0 + Double(seed % 5) * 1.4
+        let phase = Double(seed) * 1.37
+        let maxAngle = isCompact ? 1.55 : 0.72
+        let maxOffset = isCompact ? 0.9 : 0.55
 
-        content
-            .rotationEffect(.degrees(shouldRock ? (rocking ? angle : -angle) : (active ? angle * 0.7 : 0)))
-            .animation(
-                shouldRock
-                    ? .easeInOut(duration: duration).repeatForever(autoreverses: true).delay(delay)
-                    : .spring(response: 0.25, dampingFraction: 0.85),
-                value: rocking
-            )
-            .onChange(of: shouldRock) { _, isActive in
-                rocking = isActive
-            }
-            .onAppear {
-                if shouldRock { rocking = true }
-            }
+        TimelineView(.animation(paused: !active)) { timeline in
+            let t = timeline.date.timeIntervalSinceReferenceDate
+            let angle = active ? sin(t * freq + phase) * maxAngle : 0
+            let dx = active ? cos(t * (freq * 0.85) + phase) * maxOffset : 0
+            let dy = active ? sin(t * (freq * 1.15) + phase * 0.7) * maxOffset : 0
+
+            content
+                .rotationEffect(.degrees(angle))
+                .offset(x: dx, y: dy)
+                .animation(.spring(response: 0.24, dampingFraction: 0.82), value: active)
+        }
     }
 }
 
@@ -169,41 +166,56 @@ struct WidgetBoardCanvas: View {
                 }
 
             if isEditing {
-                HStack {
-                    Button {
-                        UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
-                        layout.toggle(item.module)
-                    } label: {
-                        Image(systemName: "minus.circle.fill")
-                            .font(.system(size: 20))
-                            .symbolRenderingMode(.palette)
-                            .foregroundStyle(.white, Color.secondary)
-                            .shadow(color: .black.opacity(0.2), radius: 2, y: 1)
+                // iOS 18/26-style frosted minus badge at top-left
+                Button {
+                    UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
+                    layout.toggle(item.module)
+                } label: {
+                    ZStack {
+                        Circle()
+                            .fill(.ultraThinMaterial)
+                            .overlay(Circle().strokeBorder(Color.white.opacity(0.35), lineWidth: 0.8))
+                            .frame(width: 24, height: 24)
+                        Capsule()
+                            .fill(Color.primary.opacity(0.85))
+                            .frame(width: 11, height: 2.2)
                     }
-                    .buttonStyle(.plain)
+                    .shadow(color: .black.opacity(0.22), radius: 3, y: 1)
+                }
+                .buttonStyle(.plain)
+                .offset(x: -7, y: -7)
 
-                    Spacer()
-
-                    if item.module.supportsCompact {
-                        Button {
-                            UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                            layout.toggleSpan(item.module)
-                        } label: {
-                            Text(item.span == .compact ? "1×1" : "2×1")
-                                .font(.system(size: 10, weight: .bold, design: .rounded))
-                                .foregroundStyle(.white)
-                                .padding(.horizontal, 7)
-                                .padding(.vertical, 3)
-                                .background(Capsule().fill(KCStyle.accent))
+                // iOS 18/26-style subtle corner resize handle at bottom-right for resizable tiles
+                if item.module.supportsCompact {
+                    VStack {
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            Button {
+                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                layout.toggleSpan(item.module)
+                            } label: {
+                                HStack(spacing: 4) {
+                                    Image(systemName: item.span == .compact ? "arrow.up.left.and.arrow.down.right" : "arrow.down.right.and.arrow.up.left")
+                                        .font(.system(size: 9.5, weight: .bold))
+                                    Text(item.span == .compact ? "1×1" : "2×1")
+                                        .font(.system(size: 10, weight: .bold, design: .rounded))
+                                }
+                                .foregroundStyle(.primary)
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 4)
+                                .background(.ultraThinMaterial, in: Capsule())
+                                .overlay(Capsule().strokeBorder(Color.white.opacity(0.35), lineWidth: 0.8))
+                                .shadow(color: .black.opacity(0.2), radius: 3, y: 1)
+                            }
+                            .buttonStyle(.plain)
+                            .padding(8)
                         }
-                        .buttonStyle(.plain)
                     }
                 }
-                .padding(6)
-                .offset(x: -10, y: -10)
             }
         }
-        .modifier(SpringBoardJiggle(active: isEditing && draggedModule != item.module, seed: seed))
+        .modifier(SpringBoardJiggle(active: isEditing && draggedModule != item.module, isCompact: item.span == .compact, seed: seed))
     }
 
     @ViewBuilder
@@ -447,7 +459,7 @@ struct WidgetBoardCanvas: View {
                             }
                             Spacer(minLength: 4)
                             VStack(alignment: .trailing, spacing: 3) {
-                                Text(port.isCharging ? "\(KCFormat.watts(port.power)) W" : "—")
+                                Text(port.isCharging ? "\(KCFormat.watts(port.power)) W" : (port.enabled ? "Idle" : "Off"))
                                     .font(.subheadline.weight(.semibold))
                                     .monospacedDigit()
                                     .foregroundStyle(port.isCharging ? .primary : .tertiary)
@@ -460,23 +472,15 @@ struct WidgetBoardCanvas: View {
                                     animated: ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] != "1"
                                 )
                             }
+
+                            Image(systemName: "chevron.right")
+                                .font(.caption2.weight(.semibold))
+                                .foregroundStyle(.quaternary)
+                                .padding(.leading, 2)
                         }
                         .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
-
-                    if port.isCharging {
-                        Toggle("", isOn: Binding(get: { true }, set: { if !$0 { onRequestTurnOff(port) } }))
-                            .labelsHidden()
-                            .tint(KCStyle.charging)
-                            .fixedSize()
-                    } else {
-                        Button("Idle") { Task { await model.setPort(port.index, on: true) } }
-                            .font(.caption2.weight(.medium))
-                            .foregroundStyle(.tertiary)
-                            .buttonStyle(.plain)
-                            .frame(width: 44, alignment: .trailing)
-                    }
                 }
                 if port.index != snapshot.ports.last?.index {
                     Divider().opacity(0.45)
